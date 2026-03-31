@@ -105,9 +105,9 @@ class Elem:
 if __name__ == '__main__':
     # [...] -> Caso de prueba de Saint IGNUcius
     print(Elem(tag='html', content=[
-        Elem(tag='head', content=Elem(tag='title', content=Text('Hello ground!'))),
+        Elem(tag='head', content=Elem(tag='title', content=Text('"Hello ground!"'))),
         Elem(tag='body', content=[
-            Elem(tag='h1', content=Text('Oh no, not again!')),
+            Elem(tag='h1', content=Text('"Oh no, not again!"')),
             Elem(tag='img', attr={'src': 'http://i.imgur.com/pfp3T.jpg'}, tag_type='simple')
         ])
     ]))
